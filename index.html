@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jayy - Dari Link SFL ke Link MediaFire</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div id="toast" role="status"></div>
+<div class="wrap">
+  <nav>
+    <div class="logo">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#ff4d8d"/></linearGradient></defs>
+        <rect width="32" height="32" rx="9" fill="url(#lg)"/>
+        <path d="M19 8v10a4 4 0 0 1-8 0" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+      </svg>
+      <span class="grad">Jayy</span>
+    </div>
+    <div class="pill"><i></i>Gratis &amp; online</div>
+  </nav>
+
+  <header class="hero">
+    <div class="orb" id="mascot">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <defs><linearGradient id="og" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="0.5" stop-color="#2f7bff"/><stop offset="1" stop-color="#ff4d8d"/></linearGradient></defs>
+        <circle class="o1" cx="60" cy="60" r="55"/>
+        <circle class="o2" cx="60" cy="60" r="40"/>
+        <path d="M50 70l20-20M44 58l-6 6a10 10 0 0 0 14 14l6-6M76 62l6-6a10 10 0 0 0-14-14l-6 6" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="bubble">Tempel linknya, biar aku yang kerja</div>
+    <h1>Link SFL jadi <span class="grad">link MediaFire</span></h1>
+    <p>Tempel link SFL, tekan Pindai, tunggu sekitar 30 detik, dan link MediaFire-nya muncul.</p>
+  </header>
+
+  <div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+  <section class="box scan">
+    <div class="bar">
+      <input id="url" type="url" inputmode="url" placeholder="Tempel link SFL di sini" autocomplete="off">
+      <button class="go" id="go">Pindai</button>
+    </div>
+    <div class="chips" id="hist"><span>Terakhir:</span></div>
+
+    <div id="live">
+      <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><linearGradient id="gr"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#ff4d8d"/></linearGradient></defs>
+        <g transform="rotate(-90 60 60)"><circle class="rbg" cx="60" cy="60" r="54"/><circle class="rfg" id="ringfg" cx="60" cy="60" r="54"/></g>
+        <text id="ringtxt" x="60" y="69" text-anchor="middle">...</text>
+      </svg>
+      <ul class="steps">
+        <li class="st">Mengikuti link</li>
+        <li class="st">Membuka browser</li>
+        <li class="st">Menunggu timer &amp; menekan tombol</li>
+        <li class="st">Mengambil link MediaFire</li>
+      </ul>
+    </div>
+    <div id="status" role="status"></div>
+
+    <div class="stats">
+      <div class="stat"><b id="s-scan">0</b><small>kali dipindai</small></div>
+      <div class="stat"><b id="s-ok">0</b><small>link berhasil</small></div>
+    </div>
+  </section>
+
+  <section id="result" class="box"></section>
+
+  <h2 class="t">Cara pakai</h2>
+  <div class="how">
+    <div class="hw"><b>Tempel link</b><p>Salin link SFL, lalu tempel di kotak di atas.</p></div>
+    <div class="hw"><b>Tekan Pindai</b><p>Jayy menunggu timer dan menekan tombol untukmu.</p></div>
+    <div class="hw"><b>Ambil hasilnya</b><p>Link MediaFire muncul. Tekan Buka atau Salin.</p></div>
+  </div>
+
+  <h2 class="t">Kenapa pakai Jayy?</h2>
+  <div class="grid">
+    <div class="feat"><span class="ic"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span><h3>Sekali tempel</h3><p>Tidak perlu buka halaman iklan satu per satu.</p></div>
+    <div class="feat"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 3l14 7-6 2-2 6z"/></svg></span><h3>Tombol otomatis</h3><p>Jayy menekan Next dan Lanjut sendiri sampai ketemu.</p></div>
+    <div class="feat"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h6"/></svg></span><h3>Jalur terlihat</h3><p>Kamu bisa lihat link ini lewat mana saja sebelum sampai.</p></div>
+    <div class="feat"><span class="ic"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg></span><h3>Salin &amp; buka</h3><p>Tombol salin dan buka langsung untuk tiap link yang ketemu.</p></div>
+    <div class="feat"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Riwayat</h3><p>Link yang baru dipindai tersimpan, tinggal tekan lagi.</p></div>
+    <div class="feat"><span class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span><h3>Enak di HP</h3><p>Tampilan menyesuaikan layar, nyaman dipakai dari ponsel.</p></div>
+  </div>
+
+  <h2 class="t">Tanya jawab</h2>
+  <details class="q"><summary>Kenapa ada link yang tidak ketemu?</summary><p>Jayy menunggu timer dan menekan tombol lanjut sendiri. Kalau halamannya memakai captcha, Jayy berhenti dan memberi tahu, karena captcha harus diselesaikan manual.</p></details>
+  <details class="q"><summary>Kenapa lama sampai 50 detik?</summary><p>Banyak halaman SFL memasang hitung mundur. Jayy harus menunggunya selesai sebelum tombol lanjut bisa ditekan.</p></details>
+  <details class="q"><summary>Apakah aman membuka hasilnya?</summary><p>Jayy hanya menampilkan link. Cek dulu nama file dan pengirimnya sebelum mengunduh.</p></details>
+
+  <footer>Dibuat untuk para pemburu file</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
